@@ -12,7 +12,6 @@ const WeatherApp = () => {
       const url = `https://api.openweathermap.org/data/2.5/weather?q=${search}&units=metric&appid=6127c54b73596dd413a74cbd642dc4c0`;
       const response = await fetch(url);
       const data = await response.json();
-      console.log(data);
       setCity(data.main);
     };
 
